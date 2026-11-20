@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Don’s Hjælp i Hverdagen – Maling, træværk og hjælp til hus og have</title>
+  <meta name="description" content="Don’s Hjælp i Hverdagen er en multi service-virksomhed i Danmark. Vi maler facader, hegn, døre og vinduer, behandler træværk og hjælper med opgaver i hus og have.">
+  <meta name="theme-color" content="#15303a">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph (deling på Facebook m.m.). Skift til fuld URL, når siden har et domæne, fx https://www.ditdomæne.dk/img/og-image.jpg -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:site_name" content="Don’s Hjælp i Hverdagen">
+  <meta property="og:title" content="Don’s Hjælp i Hverdagen – Multi Service">
+  <meta property="og:description" content="Maling, træværk og en hjælpende hånd til hus og have.">
+  <meta property="og:image" content="img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" href="fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Don’s Hjælp i Hverdagen",
+    "alternateName": "Don’s Hjælp i Hverdagen – Multi Service",
+    "description": "Multi service: udvendig maling, træbeskyttelse, døre og vinduer, hegn, skure og hjælp til hus og have.",
+    "image": "img/og-image.jpg",
+    "telephone": "+45XXXXXXXX",
+    "email": "din-email@example.com",
+    "areaServed": { "@type": "Country", "name": "Danmark" },
+    "sameAs": ["https://www.facebook.com/share/g/1DtwAPga4s/"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Spring til indhold</a>
+
+  <!-- Ikoner (genbruges med <use href="#...">) -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="logo-mark" viewBox="0 0 64 64">
+      <path fill="currentColor" d="M32 9 53 27h-4.5v18h-33V27H11z"/>
+      <rect fill="currentColor" x="42" y="12" width="5" height="9" rx="1"/>
+      <path fill="currentColor" d="M4 45c4-2 8-1.4 12 .6l12 5c4 1.6 8 1.2 12-.8l14-7.8c3-1.6 6 0 5.2 3-.4 1.5-1.7 2.6-3.6 3.6L40 57c-5 2.6-11 3-16.4 1L4 52z"/>
+      <rect fill="var(--mark-window, #fbf8f3)" x="27" y="27" width="10" height="10" rx="1"/>
+      <path d="M32 27v10M27 32h10" stroke="currentColor" stroke-width="1.6"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-facade" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 11 12 3.5l9.5 7.5"/><path d="M5 9.5V20.5h14V9.5"/><path d="M5 13.5h14M5 17h14"/></g></symbol>
+    <symbol id="i-fence" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V8l2-2.5L8 8v12M10 20V8l2-2.5L14 8v12M16 20V8l2-2.5L20 8v12"/><path d="M2.5 20.5h19"/></g></symbol>
+    <symbol id="i-door" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 21V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v17"/><path d="M3.5 21h17"/><path d="M9 6h6v5H9z"/><path d="M15 15h.01"/></g></symbol>
+    <symbol id="i-shed" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 10 12 4l9.5 6"/><path d="M5 8.5V21h14V8.5"/><path d="M9.5 21v-7h5v7"/></g></symbol>
+    <symbol id="i-brick" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 9.7h18M3 14.3h18M9 5v4.7M15 5v4.7M6 9.7v4.6M12 9.7v4.6M18 9.7v4.6M9 14.3V19M15 14.3V19"/></g></symbol>
+    <symbol id="i-bench" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 9h16M3 13h18M6 6v7M18 6v7M6 13v6M18 13v6"/></g></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3.5h3.5l2 5-2.4 1.5a11 11 0 0 0 5.9 5.9l1.5-2.4 5 2v3.5a2 2 0 0 1-2 2A16.5 16.5 0 0 1 3 5.5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></g></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 22v-8h2.8l.4-3.3h-3.2V8.6c0-.9.3-1.6 1.6-1.6h1.7V4.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3V14h2.8v8z"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-prev" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-next" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Don’s Hjælp i Hverdagen – til toppen" data-i18n-attr="aria-label=brand.home">
+        <svg class="brand-mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+        <span class="brand-text">
+          <span class="brand-name">Don’s Hjælp<br>i Hverdagen</span>
+          <span class="brand-tag">Multi Service</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Hovedmenu" data-i18n-attr="aria-label=nav.label">
+        <ul>
+          <li><a href="#ydelser" data-i18n="nav.services">Ydelser</a></li>
+          <li><a href="#foer-efter" data-i18n="nav.ba">Før &amp; efter</a></li>
+          <li><a href="#galleri" data-i18n="nav.gallery">Galleri</a></li>
+          <li><a href="#om" data-i18n="nav.about">Om os</a></li>
+          <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="lang-toggle" type="button" id="lang-toggle" aria-label="Switch to English">
+          <span data-lang-opt="da">DA</span><span data-lang-opt="en">EN</span>
+        </button>
+        <a class="btn btn-primary btn-sm header-cta" href="#kontakt" data-i18n="nav.cta">Få et tilbud</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Åbn menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Maling · Træværk · Hus &amp; have</p>
+          <h1 data-i18n="hero.title">En hjælpende hånd til <em>hus og have</em></h1>
+          <p class="lead" data-i18n="hero.lead">Vi maler facader, hegn, døre og vinduer, giver træværket ny beskyttelse og tager os af de opgaver, der aldrig rigtig bliver til noget. Grundigt forarbejde, pæn finish – og vi rydder op efter os.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#kontakt"><span data-i18n="hero.cta1">Få et uforpligtende tilbud</span><svg class="btn-icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-ghost" href="#galleri" data-i18n="hero.cta2">Se vores arbejde</a>
+          </div>
+          <ul class="hero-points">
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="hero.p1">Grundig forbehandling</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="hero.p2">Afdækning og oprydning</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="hero.p3">Mange opgaver – én kontakt</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-media">
+          <figure class="hero-main">
+            <img src="img/hegn-roed-700.webp"
+                 srcset="img/hegn-roed-700.webp 700w, img/hegn-roed-1400.webp 1400w"
+                 sizes="(min-width: 960px) 460px, 92vw"
+                 width="700" height="933" fetchpriority="high"
+                 alt="Rødt plankeværk og låge bliver malet med pensel" data-i18n-attr="alt=alt.fence">
+          </figure>
+          <figure class="hero-inset">
+            <img src="img/havebaenk-700.webp" width="700" height="933" loading="lazy"
+                 alt="Nymalet hvid havebænk foran en rød murstensvæg" data-i18n-attr="alt=alt.bench">
+          </figure>
+          <div class="hero-badge">
+            <svg class="hero-badge-mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+            <span><strong>Multi Service</strong><span data-i18n="hero.badge">Hjælp i hverdagen</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ YDELSER ============ -->
+    <section class="section" id="ydelser">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow" data-i18n="services.eyebrow">Ydelser</p>
+          <h2 data-i18n="services.title">Det kan vi hjælpe med</h2>
+          <p data-i18n="services.intro">Fra en enkelt havebænk til hele husets træværk. Står din opgave ikke på listen, så spørg alligevel – vi er en multi service.</p>
+        </header>
+
+        <ul class="services-grid">
+          <li class="service-card reveal">
+            <span class="service-icon"><svg aria-hidden="true"><use href="#i-facade"/></svg></span>
+            <h3 data-i18n="s1.title">Facader &amp; træbeklædning</h3>
+            <p data-i18n="s1.text">Afrensning, skrabning og maling af træfacader, sternbrædder og vindskeder, så huset står skarpt og er beskyttet mod vejret.</p>
+          </li>
+          <li class="service-card reveal">
+            <span class="service-icon"><svg aria-hidden="true"><use href="#i-fence"/></svg></span>
+            <h3 data-i18n="s2.title">Hegn, plankeværk &amp; låger</h3>
+            <p data-i18n="s2.text">Hegn og låger får nyt liv med træbeskyttelse eller dækkende maling – fra den klassiske røde til moderne mørke farver.</p>
+          </li>
+          <li class="service-card reveal">
+            <span class="service-icon"><svg aria-hidden="true"><use href="#i-door"/></svg></span>
+            <h3 data-i18n="s3.title">Døre &amp; vinduer</h3>
+            <p data-i18n="s3.text">Afslibning og ny maling af hoveddøre, karme og vinduesrammer – med omhyggelig afdækning af glas og beslag.</p>
+          </li>
+          <li class="service-card reveal">
+            <span class="service-icon"><svg aria-hidden="true"><use href="#i-shed"/></svg></span>
+            <h3 data-i18n="s4.title">Skure, udhuse &amp; carporte</h3>
+            <p data-i18n="s4.text">Træbeskyttelse af skure, udhuse, halvtage og carporte, så træet holder sig flot og tæt år efter år.</p>
+          </li>
+          <li class="service-card reveal">
+            <span class="service-icon"><svg aria-hidden="true"><use href="#i-brick"/></svg></span>
+            <h3 data-i18n="s5.title">Murværk &amp; skorstene</h3>
+            <p data-i18n="s5.text">Maling af murede og pudsede flader, skorstene og sokler – en hurtig vej til et mere friskt og velholdt hus.</p>
+          </li>
+          <li class="service-card reveal">
+            <span class="service-icon"><svg aria-hidden="true"><use href="#i-bench"/></svg></span>
+            <h3 data-i18n="s6.title">Havemøbler &amp; småopgaver</h3>
+            <p data-i18n="s6.text">Bænke, borde og andet havemøbel bliver slebet og malet. Og har du andre små opgaver i hus og have, hjælper vi gerne.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PROCES ============ -->
+    <section class="section section-dark" id="proces" aria-labelledby="proces-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow" data-i18n="process.eyebrow">Sådan foregår det</p>
+          <h2 id="proces-title" data-i18n="process.title">Et godt resultat starter med forarbejdet</h2>
+        </header>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">01</span>
+            <h3 data-i18n="p1.title">Kontakt</h3>
+            <p data-i18n="p1.text">Ring, skriv eller send en besked på Facebook. Send gerne et par billeder af opgaven med.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">02</span>
+            <h3 data-i18n="p2.title">Besigtigelse &amp; tilbud</h3>
+            <p data-i18n="p2.text">Vi ser på opgaven sammen, taler om ønsker og farver, og du får en klar pris, før vi går i gang.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">03</span>
+            <h3 data-i18n="p3.title">Forarbejde</h3>
+            <p data-i18n="p3.text">Afrensning, skrabning, slibning og afdækning. Det er her, holdbarheden og den pæne finish bliver skabt.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">04</span>
+            <h3 data-i18n="p4.title">Maling &amp; aflevering</h3>
+            <p data-i18n="p4.text">Vi maler med produkter, der passer til underlaget, rydder op og gennemgår resultatet med dig.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ FØR & EFTER ============ -->
+    <section class="section" id="foer-efter">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow" data-i18n="ba.eyebrow">Før &amp; efter</p>
+          <h2 data-i18n="ba.title">Se forskellen</h2>
+          <p data-i18n="ba.intro">To eksempler på, hvad lidt omhu, slibepapir og maling kan gøre for et hus.</p>
+        </header>
+
+        <div class="ba-grid">
+          <article class="ba-card reveal">
+            <div class="ba-pair">
+              <figure>
+                <img src="img/stern-foer-700.webp" width="700" height="933" loading="lazy"
+                     alt="Afskallede sternbrædder bliver skrabet og slebet på et gult træhus" data-i18n-attr="alt=alt.sternBefore">
+                <figcaption class="ba-label" data-i18n="ba.before">Før</figcaption>
+              </figure>
+              <figure>
+                <img src="img/skorsten-efter-700.webp" width="700" height="933" loading="lazy"
+                     alt="Gult træhus med nymalet hvid skorsten, stern og vindskeder" data-i18n-attr="alt=alt.sternAfter">
+                <figcaption class="ba-label ba-label-after" data-i18n="ba.after">Efter</figcaption>
+              </figure>
+            </div>
+            <div class="ba-body">
+              <h3 data-i18n="ba1.title">Sternbrædder &amp; skorsten</h3>
+              <p data-i18n="ba1.text">Den gamle, afskallede maling blev skrabet og slebet ned, før stern, vindskeder og skorsten fik en ny, hvid finish, der står skarpt mod den gule træfacade.</p>
+            </div>
+          </article>
+
+          <article class="ba-card reveal">
+            <div class="ba-pair">
+              <figure>
+                <img src="img/sort-doer-undervejs-700.webp" width="700" height="933" loading="lazy"
+                     alt="Slidt sort staldør bliver malet med pensel" data-i18n-attr="alt=alt.doorDuring">
+                <figcaption class="ba-label" data-i18n="ba.during">Undervejs</figcaption>
+              </figure>
+              <figure>
+                <img src="img/sort-hus-efter-700.webp" width="700" height="525" loading="lazy" class="ba-img-left"
+                     alt="Færdigmalet sort træhus med glasdør og planter foran" data-i18n-attr="alt=alt.doorAfter">
+                <figcaption class="ba-label ba-label-after" data-i18n="ba.after">Efter</figcaption>
+              </figure>
+            </div>
+            <div class="ba-body">
+              <h3 data-i18n="ba2.title">Sort træhus med staldør</h3>
+              <p data-i18n="ba2.text">Slidt og afskallet træværk på dør og facade blev slebet og malet op igen. Nu står huset ensartet sort og klar til vejr og vind.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERI ============ -->
+    <section class="section section-sand" id="galleri">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow" data-i18n="gallery.eyebrow">Galleri</p>
+          <h2 data-i18n="gallery.title">Udvalgte opgaver</h2>
+          <p data-i18n="gallery.intro">Et udpluk af opgaver fra hverdagen. Tryk på et billede for at se det i stor størrelse.</p>
+        </header>
+
+        <div class="filters" role="group" aria-label="Filtrér billeder" data-i18n-attr="aria-label=gallery.filterLabel">
+          <button type="button" class="chip" data-filter="all" aria-pressed="true" data-i18n="f.all">Alle</button>
+          <button type="button" class="chip" data-filter="facade" aria-pressed="false" data-i18n="f.facade">Facader &amp; stern</button>
+          <button type="button" class="chip" data-filter="doors" aria-pressed="false" data-i18n="f.doors">Døre &amp; vinduer</button>
+          <button type="button" class="chip" data-filter="garden" aria-pressed="false" data-i18n="f.garden">Hegn &amp; have</button>
+          <button type="button" class="chip" data-filter="sheds" aria-pressed="false" data-i18n="f.sheds">Skure &amp; udhuse</button>
+        </div>
+
+        <ul class="gallery" id="gallery">
+          <li class="g-item" data-cat="garden">
+            <button type="button" class="g-open" data-full="img/hegn-roed-1400.webp">
+              <img src="img/hegn-roed-700.webp" width="700" height="933" loading="lazy" alt="Rødt plankeværk og låge bliver malet med pensel" data-i18n-attr="alt=alt.fence">
+              <span class="g-cap" data-i18n="g1">Rødt plankeværk og låge får ny maling</span>
+            </button>
+          </li>
+          <li class="g-item is-wide" data-cat="sheds">
+            <button type="button" class="g-open" data-full="img/udhus-graa-1400.webp">
+              <img src="img/udhus-graa-700.webp" width="700" height="525" loading="lazy" alt="Udhus under halvtag bliver malet antracitgrå" data-i18n-attr="alt=alt.shedGrey">
+              <span class="g-cap" data-i18n="g2">Udhus under halvtag males antracitgrå</span>
+            </button>
+          </li>
+          <li class="g-item" data-cat="facade">
+            <button type="button" class="g-open" data-full="img/skorsten-efter-1400.webp">
+              <img src="img/skorsten-efter-700.webp" width="700" height="933" loading="lazy" alt="Gult træhus med nymalet hvid skorsten, stern og vindskeder" data-i18n-attr="alt=alt.sternAfter">
+              <span class="g-cap" data-i18n="g3">Hvid skorsten og stern på gult træhus</span>
+            </button>
+          </li>
+          <li class="g-item" data-cat="garden">
+            <button type="button" class="g-open" data-full="img/havebaenk-1400.webp">
+              <img src="img/havebaenk-700.webp" width="700" height="933" loading="lazy" alt="Nymalet hvid havebænk foran en rød murstensvæg" data-i18n-attr="alt=alt.bench">
+              <span class="g-cap" data-i18n="g4">Havebænk slebet og malet hvid</span>
+            </button>
+          </li>
+          <li class="g-item" data-cat="doors">
+            <button type="button" class="g-open" data-full="img/hoveddoer-1400.webp">
+              <img src="img/hoveddoer-700.webp" width="700" height="933" loading="lazy" alt="Grøn hoveddør med orange og lyse felter bliver slebet i hånden" data-i18n-attr="alt=alt.frontDoor">
+              <span class="g-cap" data-i18n="g5">Hoveddør slibes før ny maling</span>
+            </button>
+          </li>
+          <li class="g-item" data-cat="facade">
+            <button type="button" class="g-open" data-full="img/stern-foer-1400.webp">
+              <img src="img/stern-foer-700.webp" width="700" height="933" loading="lazy" alt="Afskallede sternbrædder bliver skrabet og slebet på et gult træhus" data-i18n-attr="alt=alt.sternBefore">
+              <span class="g-cap" data-i18n="g6">Sternbrædder skrabes og slibes ned</span>
+            </button>
+          </li>
+          <li class="g-item is-wide" data-cat="sheds">
+            <button type="button" class="g-open" data-full="img/sort-hus-efter-1400.webp">
+              <img src="img/sort-hus-efter-700.webp" width="700" height="525" loading="lazy" alt="Færdigmalet sort træhus med glasdør og planter foran" data-i18n-attr="alt=alt.doorAfter">
+              <span class="g-cap" data-i18n="g7">Sort træhus – færdigt og flot</span>
+            </button>
+          </li>
+          <li class="g-item" data-cat="sheds">
+            <button type="button" class="g-open" data-full="img/sort-udhus-1400.webp">
+              <img src="img/sort-udhus-700.webp" width="700" height="933" loading="lazy" alt="Sort udhus med lodret træbeklædning og hvidt vindue" data-i18n-attr="alt=alt.shedBlack">
+              <span class="g-cap" data-i18n="g8">Udhus med lodret beklædning i sort</span>
+            </button>
+          </li>
+          <li class="g-item" data-cat="doors">
+            <button type="button" class="g-open" data-full="img/sort-doer-undervejs-1400.webp">
+              <img src="img/sort-doer-undervejs-700.webp" width="700" height="933" loading="lazy" alt="Slidt sort staldør bliver malet med pensel" data-i18n-attr="alt=alt.doorDuring">
+              <span class="g-cap" data-i18n="g9">Staldør males sort efter slibning</span>
+            </button>
+          </li>
+          <li class="g-item" data-cat="doors">
+            <button type="button" class="g-open" data-full="img/vinduer-1400.webp">
+              <img src="img/vinduer-700.webp" width="700" height="933" loading="lazy" alt="Vinduesrammer bliver malet hvide, glasset er afdækket med blå tape" data-i18n-attr="alt=alt.window">
+              <span class="g-cap" data-i18n="g10">Vinduesrammer males – glasset er afdækket</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ OM OS ============ -->
+    <section class="section" id="om">
+      <div class="container about-grid">
+        <figure class="about-media reveal">
+          <img src="img/udhus-graa-700.webp"
+               srcset="img/udhus-graa-700.webp 700w, img/udhus-graa-1400.webp 1400w"
+               sizes="(min-width: 960px) 540px, 92vw"
+               width="700" height="525" loading="lazy"
+               alt="Maler i arbejdstøj med Don’s Hjælp i Hverdagen-logoet på ryggen, i gang med et udhus" data-i18n-attr="alt=alt.about">
+        </figure>
+        <div class="about-copy reveal">
+          <p class="eyebrow" data-i18n="about.eyebrow">Om os</p>
+          <h2 data-i18n="about.title">Hjælp i hverdagen – helt bogstaveligt</h2>
+          <!-- TIP: Skriv gerne et par linjer om Don selv her – baggrund, erfaring og område. -->
+          <p data-i18n="about.p1">Navnet siger det hele: Don’s Hjælp i Hverdagen er her for at hjælpe med de opgaver i hus og have, som du ikke selv har tid, lyst eller værktøj til.</p>
+          <p data-i18n="about.p2">Vi tager os tid til det, der ikke kan ses bagefter – skrabning, slibning, afrensning og afdækning – fordi det er dét, der får malingen til at holde og resultatet til at se ordentligt ud.</p>
+          <blockquote class="about-quote" data-i18n="about.quote">“Ordentligt arbejde, en fair pris og en hjælpende hånd, når du har brug for den.”</blockquote>
+          <a class="btn btn-primary" href="#kontakt" data-i18n="about.cta">Fortæl os om din opgave</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FACEBOOK ============ -->
+    <section class="fb-section" aria-labelledby="fb-title">
+      <div class="container">
+        <div class="fb-card reveal">
+          <span class="fb-icon"><svg aria-hidden="true"><use href="#i-facebook"/></svg></span>
+          <div>
+            <h2 id="fb-title" data-i18n="fb.title">Følg med på Facebook</h2>
+            <p data-i18n="fb.text">Se de nyeste opgaver, billeder og nyheder i vores Facebook-gruppe – og skriv gerne til os dér.</p>
+          </div>
+          <a class="btn btn-light" href="https://www.facebook.com/share/g/1DtwAPga4s/" target="_blank" rel="noopener">
+            <span data-i18n="fb.cta">Gå til gruppen</span><svg class="btn-icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ KONTAKT ============ -->
+    <section class="section" id="kontakt">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <p class="eyebrow" data-i18n="contact.eyebrow">Kontakt</p>
+          <h2 data-i18n="contact.title">Få et uforpligtende tilbud</h2>
+          <p data-i18n="contact.intro">Fortæl kort om opgaven, så vender vi tilbage hurtigst muligt. Billeder af opgaven gør det nemmere at give en pris.</p>
+
+          <!-- RET: Indsæt rigtigt telefonnummer, e-mail og område nedenfor (søg efter "XX XX" og "example.com" i alle filer). -->
+          <ul class="contact-list">
+            <li>
+              <span class="contact-icon"><svg aria-hidden="true"><use href="#i-phone"/></svg></span>
+              <span><span class="contact-label" data-i18n="contact.phone">Telefon</span>
+              <a href="tel:+45XXXXXXXX">+45 XX XX XX XX</a></span>
+            </li>
+            <li>
+              <span class="contact-icon"><svg aria-hidden="true"><use href="#i-mail"/></svg></span>
+              <span><span class="contact-label" data-i18n="contact.email">E-mail</span>
+              <a href="mailto:din-email@example.com">din-email@example.com</a></span>
+            </li>
+            <li>
+              <span class="contact-icon"><svg aria-hidden="true"><use href="#i-facebook"/></svg></span>
+              <span><span class="contact-label">Facebook</span>
+              <a href="https://www.facebook.com/share/g/1DtwAPga4s/" target="_blank" rel="noopener" data-i18n="contact.fbLink">Don’s Hjælp i Hverdagen</a></span>
+            </li>
+            <li>
+              <span class="contact-icon"><svg aria-hidden="true"><use href="#i-pin"/></svg></span>
+              <span><span class="contact-label" data-i18n="contact.area">Område</span>
+              <span data-i18n="contact.areaValue">[Indsæt by / område]</span></span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" data-mailto="din-email@example.com">
+          <div class="field">
+            <label for="f-name" data-i18n="form.name">Navn</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required maxlength="80">
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-phone" data-i18n="form.phone">Telefon</label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" required maxlength="30">
+            </div>
+            <div class="field">
+              <label for="f-email"><span data-i18n="form.email">E-mail</span> <span class="optional" data-i18n="form.optional">(valgfri)</span></label>
+              <input id="f-email" name="email" type="email" autocomplete="email" maxlength="120">
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-city" data-i18n="form.city">Postnr. og by</label>
+              <input id="f-city" name="city" type="text" autocomplete="address-level2" maxlength="80">
+            </div>
+            <div class="field">
+              <label for="f-task" data-i18n="form.task">Type opgave</label>
+              <select id="f-task" name="task">
+                <option data-i18n="o1">Udvendig maling / facade</option>
+                <option data-i18n="o2">Hegn, plankeværk &amp; låger</option>
+                <option data-i18n="o3">Døre &amp; vinduer</option>
+                <option data-i18n="o4">Skur, udhus &amp; carport</option>
+                <option data-i18n="o5">Murværk &amp; skorsten</option>
+                <option data-i18n="o6">Havemøbler</option>
+                <option data-i18n="o7">Andet</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-msg" data-i18n="form.msg">Beskriv opgaven</label>
+            <textarea id="f-msg" name="message" rows="5" required maxlength="1200"
+                      placeholder="Fx: Vi har et plankeværk på ca. 20 meter, der trænger til ny maling …" data-i18n-attr="placeholder=form.msgPh"></textarea>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit"><span data-i18n="form.submit">Send forespørgsel</span><svg class="btn-icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <p class="form-note" data-i18n="form.note">Når du trykker send, åbnes dit e-mailprogram med beskeden klar til afsendelse. Dine oplysninger bruges kun til at besvare din henvendelse.</p>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-light" href="#top">
+          <svg class="brand-mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+          <span class="brand-text">
+            <span class="brand-name">Don’s Hjælp<br>i Hverdagen</span>
+            <span class="brand-tag">Multi Service</span>
+          </span>
+        </a>
+        <p data-i18n="footer.text">Maling, træværk og en hjælpende hånd til hus og have.</p>
+      </div>
+      <nav aria-label="Genveje" data-i18n-attr="aria-label=footer.navLabel">
+        <h2 class="footer-title" data-i18n="footer.links">Genveje</h2>
+        <ul>
+          <li><a href="#ydelser" data-i18n="nav.services">Ydelser</a></li>
+          <li><a href="#foer-efter" data-i18n="nav.ba">Før &amp; efter</a></li>
+          <li><a href="#galleri" data-i18n="nav.gallery">Galleri</a></li>
+          <li><a href="#om" data-i18n="nav.about">Om os</a></li>
+          <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="footer-title" data-i18n="footer.contact">Kontakt</h2>
+        <ul>
+          <li><a href="tel:+45XXXXXXXX">+45 XX XX XX XX</a></li>
+          <li><a href="mailto:din-email@example.com">din-email@example.com</a></li>
+          <li><a href="https://www.facebook.com/share/g/1DtwAPga4s/" target="_blank" rel="noopener" data-i18n="footer.fb">Facebook-gruppe</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Don’s Hjælp i Hverdagen · CVR XXXXXXXX</p>
+      <p data-i18n="footer.cookies">Denne side bruger ingen cookies.</p>
+    </div>
+  </footer>
+
+  <!-- Mobil: fast kontaktbjælke -->
+  <div class="mobile-cta">
+    <a class="btn btn-ghost-light" href="tel:+45XXXXXXXX"><svg class="btn-icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="mcta.call">Ring</span></a>
+    <a class="btn btn-primary" href="#kontakt" data-i18n="mcta.quote">Få et tilbud</a>
+  </div>
+
+  <!-- Lysboks til galleriet -->
+  <dialog class="lightbox" id="lightbox" aria-label="Billedvisning" data-i18n-attr="aria-label=lb.label">
+    <button type="button" class="lb-btn lb-close" aria-label="Luk" data-i18n-attr="aria-label=lb.close"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+    <button type="button" class="lb-btn lb-prev" aria-label="Forrige billede" data-i18n-attr="aria-label=lb.prev"><svg aria-hidden="true"><use href="#i-prev"/></svg></button>
+    <figure class="lb-figure">
+      <img class="lb-img" alt="">
+      <figcaption class="lb-cap"><span class="lb-text"></span><span class="lb-count"></span></figcaption>
+    </figure>
+    <button type="button" class="lb-btn lb-next" aria-label="Næste billede" data-i18n-attr="aria-label=lb.next"><svg aria-hidden="true"><use href="#i-next"/></svg></button>
+  </dialog>
+</body>
+</html>
