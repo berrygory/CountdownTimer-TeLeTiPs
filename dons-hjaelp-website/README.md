@@ -3,23 +3,21 @@
 A one-page website for **Don’s Hjælp i Hverdagen – Multi Service** (painting, woodwork and help around the house and garden in Denmark).
 
 - Danish by default, with a **DA / EN** switch in the header
-- Sections: hero, services, how it works, before & after, filterable photo gallery with a full-screen viewer, about, Facebook group, contact form, footer
+- Green-and-white glass look (glassmorphism), matching the logo
+- Brush transition: clicking a menu link sweeps a green paintbrush across the screen and reveals the next section (switched off for visitors who have “reduce motion” turned on)
+- Sections: hero, services (cleaning, deep cleaning, painting, woodwork, gardening, custom jobs), how it works, before & after, filterable photo gallery with a full-screen viewer, about, Facebook group, contact form, footer
 - Works on phones (sticky “Ring / Få et tilbud” bar), tablets and desktop
 - Plain HTML, CSS and JavaScript: no build step, no frameworks, no cookies, no tracking
 - Fonts are self-hosted (no requests to Google, which matters for GDPR in the EU)
 - Photos are resized to WebP and **stripped of EXIF/GPS data**, so customers’ home locations are not leaked
 
-## Before going live: replace the placeholders
+## Before going live
 
-Search all files for these and replace them with the real details:
+Phone (+45 71 67 49 10), email and service area (Slagelse, Sorø, Ringsted, Korsør, Skælskør, Dianalund, Vemmelev, Høng, Fuglebjerg) are filled in.
 
-| Placeholder | What to put there | Where |
-|---|---|---|
-| `+45XXXXXXXX` | Phone number in link format, e.g. `+4512345678` | `index.html` (call links, structured data) |
-| `+45 XX XX XX XX` | Phone number as shown, e.g. `+45 12 34 56 78` | `index.html` |
-| `din-email@example.com` | The business email (contact form sends here) | `index.html` |
-| `CVR XXXXXXXX` | CVR number (Danish businesses must show it) | `index.html` footer |
-| `[Indsæt by / område]` / `[Insert town / area]` | The area you work in, e.g. “Nordsjælland” | `index.html` and `js/main.js` |
+Still to do:
+
+- **CVR number:** when it’s ready, add it in the footer of `index.html` (look for the comment `Tilføj CVR her`). Danish businesses must show it on their website.
 
 Also worth a look:
 
@@ -63,3 +61,7 @@ The whole folder is the website. Any of these work:
 
 - Ask customers before showing photos of their homes, and keep house numbers and street signs out of shots.
 - Fonts: Fraunces and Inter, both under the SIL Open Font License (see `fonts/`).
+
+## Logo intro (test page)
+
+`logo-intro-test.html` is a separate test page for the logo animation. It plays the intro on top of the real site, with **Afspil igen** (replay) and **Langsomt** (slow motion) buttons. Once it’s approved it will be moved into `index.html` (shown once per visit, skippable by clicking).

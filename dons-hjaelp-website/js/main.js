@@ -12,8 +12,8 @@
      skriver (fx beskeder fra formularen).
      ------------------------------------------------------------------ */
   var EN = {
-    'meta.title': 'Don’s Hjælp i Hverdagen – Painting, woodwork and help around the house',
-    'meta.desc': 'Don’s Hjælp i Hverdagen is a multi-service business in Denmark. We paint facades, fences, doors and windows, treat woodwork and help with jobs around the house and garden.',
+    'meta.title': 'Don’s Hjælp i Hverdagen – Cleaning, painting and gardening in Slagelse and the surrounding area',
+    'meta.desc': 'Don’s Hjælp i Hverdagen helps with cleaning, deep cleaning, painting and gardening in Slagelse, Sorø, Ringsted, Korsør, Skælskør and the surrounding area. We are also open to custom jobs.',
     'skip': 'Skip to content',
     'brand.home': 'Don’s Hjælp i Hverdagen – back to top',
     'nav.label': 'Main menu',
@@ -27,15 +27,15 @@
     'nav.close': 'Close menu',
     'lang.switch': 'Skift til dansk',
 
-    'hero.eyebrow': 'Painting · Woodwork · House &amp; garden',
-    'hero.title': 'A helping hand for your <em>house and garden</em>',
-    'hero.lead': 'We paint facades, fences, doors and windows, give your woodwork new protection and take care of the jobs that never quite get done. Thorough preparation, a clean finish – and we tidy up after ourselves.',
+    'hero.eyebrow': 'Cleaning · Painting · Garden',
+    'hero.title': 'A helping hand for your <em>home, house and garden</em>',
+    'hero.lead': 'We help with cleaning and deep cleaning, indoor and outdoor painting, gardening and all the jobs that never quite get done. Got something special? Just ask – we’re open to most things.',
     'hero.cta1': 'Get a free, no-obligation quote',
     'hero.cta2': 'See our work',
-    'hero.p1': 'Thorough preparation',
-    'hero.p2': 'Masking and clean-up',
-    'hero.p3': 'Many jobs – one contact',
-    'hero.badge': 'Help in everyday life',
+    'hero.p1': 'Thorough, tidy work',
+    'hero.p2': 'Slagelse, Sorø, Korsør and nearby',
+    'hero.p3': 'Open to custom jobs',
+    'hero.badge': 'Slagelse and nearby',
 
     'alt.fence': 'A red wooden fence and gate being painted with a brush',
     'alt.bench': 'A freshly painted white garden bench in front of a red brick wall',
@@ -50,31 +50,32 @@
     'alt.about': 'Painter in work clothes with the Don’s Hjælp i Hverdagen logo on the back, painting an outbuilding',
 
     'services.eyebrow': 'Services',
-    'services.title': 'How we can help',
-    'services.intro': 'From a single garden bench to all the woodwork on your house. If your job isn’t on the list, just ask – we’re a multi-service business.',
-    's1.title': 'Facades &amp; wooden cladding',
-    's1.text': 'Cleaning, scraping and painting of wooden facades, fascia boards and bargeboards, so your house looks sharp and is protected from the weather.',
-    's2.title': 'Fences, panels &amp; gates',
-    's2.text': 'Fences and gates get a new lease of life with wood protection or opaque paint – from classic Danish red to modern dark shades.',
-    's3.title': 'Doors &amp; windows',
-    's3.text': 'Sanding and repainting of front doors, frames and window sashes – with careful masking of glass and fittings.',
-    's4.title': 'Sheds, outbuildings &amp; carports',
-    's4.text': 'Wood protection for sheds, outbuildings, lean-tos and carports, so the timber stays good-looking and weather-tight year after year.',
-    's5.title': 'Masonry &amp; chimneys',
-    's5.text': 'Painting of brick and rendered surfaces, chimneys and plinths – a quick way to a fresher, well-kept home.',
-    's6.title': 'Garden furniture &amp; small jobs',
-    's6.text': 'Benches, tables and other garden furniture are sanded and painted. And if you have other small jobs around the house and garden, we’re happy to help.',
+    'services.title': 'What we can help with',
+    'services.intro': 'Cleaning, painting and gardening are our everyday work – but we’re open to custom jobs too. If your job isn’t on the list, just ask.',
+    's1.title': 'Cleaning',
+    's1.text': 'Regular cleaning of homes, holiday homes and small businesses – on a fixed schedule or as a one-off when you need it.',
+    's2.title': 'Deep cleaning',
+    's2.text': 'Thorough top-to-bottom cleaning – kitchen, bathroom, skirting boards, cupboards and windows. Perfect for a spring clean or when moving out.',
+    's3.title': 'Painting – indoors and out',
+    's3.text': 'Walls, ceilings, facades, doors, windows and fences. Careful preparation with cleaning, sanding and masking gives a neat, lasting finish.',
+    's4.title': 'Woodwork &amp; wood protection',
+    's4.text': 'Sheds, outbuildings, carports, fascia boards and garden furniture get new protection, so the wood stays good-looking year after year.',
+    's5.title': 'Gardening',
+    's5.text': 'Lawn mowing, hedge trimming, weeding, pruning and tidying up – so your garden becomes a place you want to spend time.',
+    's6.title': 'Custom jobs',
+    's6.text': 'Have a job that isn’t listed here? Tell us what you need and we’ll find a solution together.',
+    's6.cta': 'Ask us',
 
     'process.eyebrow': 'How it works',
-    'process.title': 'A good result starts with the preparation',
+    'process.title': 'Easy from first message to finished result',
     'p1.title': 'Get in touch',
-    'p1.text': 'Call, write or send a message on Facebook. Feel free to include a few photos of the job.',
-    'p2.title': 'Visit &amp; quote',
-    'p2.text': 'We look at the job together, talk about your wishes and colours, and you get a clear price before we start.',
-    'p3.title': 'Preparation',
-    'p3.text': 'Cleaning, scraping, sanding and masking. This is where durability and a clean finish are created.',
-    'p4.title': 'Painting &amp; handover',
-    'p4.text': 'We paint with products suited to the surface, tidy up and go through the result with you.',
+    'p1.text': 'Call, text or send an email. Feel free to include a few photos of the job.',
+    'p2.title': 'Quote',
+    'p2.text': 'We look at the job together, talk about what you want, and you get a clear price before we start.',
+    'p3.title': 'Thorough work',
+    'p3.text': 'We take time over the things you can’t see afterwards – preparation, masking and the small details.',
+    'p4.title': 'Handover',
+    'p4.text': 'We tidy up after ourselves and go through the result with you, so you’re happy with it.',
 
     'ba.eyebrow': 'Before &amp; after',
     'ba.title': 'See the difference',
@@ -109,8 +110,8 @@
 
     'about.eyebrow': 'About us',
     'about.title': 'Help in everyday life – literally',
-    'about.p1': 'The name says it all: Don’s Hjælp i Hverdagen (“Don’s Help in Everyday Life”) is here to help with the jobs around your house and garden that you don’t have the time, energy or tools for.',
-    'about.p2': 'We take time over the things you can’t see afterwards – scraping, sanding, cleaning and masking – because that’s what makes the paint last and the result look right.',
+    'about.p1': 'The name says it all: Don’s Hjælp i Hverdagen (“Don’s Help in Everyday Life”) is here to help with the jobs in your home, house and garden that you don’t have the time, energy or tools for – in Slagelse and the surrounding area.',
+    'about.p2': 'Whether it’s cleaning, painting or gardening, we take time over the details. That’s what makes the difference between a quick job and a proper result.',
     'about.quote': '“Honest work, a fair price and a helping hand when you need it.”',
     'about.cta': 'Tell us about your job',
 
@@ -124,8 +125,8 @@
     'contact.phone': 'Phone',
     'contact.email': 'Email',
     'contact.fbLink': 'Don’s Hjælp i Hverdagen',
-    'contact.area': 'Area',
-    'contact.areaValue': '[Insert town / area]',
+    'contact.area': 'Where we work',
+    'contact.areaNote': 'Live a bit further away? Call anyway – we can often find a solution.',
 
     'form.name': 'Name',
     'form.phone': 'Phone',
@@ -133,15 +134,14 @@
     'form.optional': '(optional)',
     'form.city': 'Postcode and town',
     'form.task': 'Type of job',
-    'o1': 'Exterior painting / facade',
-    'o2': 'Fences, panels &amp; gates',
-    'o3': 'Doors &amp; windows',
-    'o4': 'Shed, outbuilding &amp; carport',
-    'o5': 'Masonry &amp; chimney',
-    'o6': 'Garden furniture',
-    'o7': 'Other',
+    'o1': 'Cleaning',
+    'o2': 'Deep cleaning',
+    'o3': 'Painting (indoor or outdoor)',
+    'o4': 'Woodwork &amp; wood protection',
+    'o5': 'Gardening',
+    'o6': 'Custom job / other',
     'form.msg': 'Describe the job',
-    'form.msgPh': 'E.g. We have a wooden fence of about 20 metres that needs repainting …',
+    'form.msgPh': 'E.g. We need a deep clean of a terraced house of about 100 m² …',
     'form.submit': 'Send enquiry',
     'form.note': 'When you press send, your email program opens with the message ready to go. Your details are only used to reply to your enquiry.',
     'form.opening': 'Your email program is opening. If nothing happens, write to {email} or give us a call.',
@@ -153,7 +153,7 @@
     'mail.task': 'Type of job',
     'mail.msg': 'Description',
 
-    'footer.text': 'Painting, woodwork and a helping hand for house and garden.',
+    'footer.text': 'Cleaning, painting, gardening and custom jobs in Slagelse and the surrounding area.',
     'footer.navLabel': 'Shortcuts',
     'footer.links': 'Shortcuts',
     'footer.contact': 'Contact',
@@ -417,6 +417,63 @@
       var status = $('#form-status');
       if (status) status.textContent = t('form.opening').replace('{email}', to);
       window.location.href = href;
+    });
+  }
+
+  /* ---------- Pensel-overgang mellem sektioner ----------
+     Når man klikker på et internt link (#...), fejer en pensel hen over
+     skærmen, siden hopper til den nye sektion bag malingen, og malingen
+     glider væk og afslører den. Slås fra, hvis brugeren har valgt
+     "reducer bevægelse" i sit styresystem. */
+  var wipe = $('.brush-wipe');
+  var track = $('.bw-track');
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var wiping = false;
+  var EASE = 'cubic-bezier(.65, 0, .35, 1)';
+
+  function jumpTo(target, hash) {
+    var prev = root.style.scrollBehavior;
+    root.style.scrollBehavior = 'auto';
+    if (hash === '#top') window.scrollTo(0, 0);
+    else target.scrollIntoView({ block: 'start' });
+    root.style.scrollBehavior = prev;
+    try { history.pushState(null, '', hash); } catch (e) { /* ignore */ }
+    if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+    target.focus({ preventScroll: true });
+    // Vis indholdet med det samme i stedet for at fade ind bag penslen.
+    $$('.reveal', target).forEach(function (el) { el.classList.add('is-visible'); });
+  }
+
+  if (wipe && track && typeof track.animate === 'function') {
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest ? e.target.closest('a[href^="#"]') : null;
+      if (!link || link.classList.contains('skip-link') || reduceMotion) return;
+      if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      var hash = link.getAttribute('href');
+      var target = hash.length > 1 ? document.getElementById(hash.slice(1)) : null;
+      if (!target) return;
+      e.preventDefault();
+      if (wiping) return;
+      wiping = true;
+      wipe.classList.add('is-active');
+
+      var cover = track.animate(
+        [{ transform: 'translateX(-185vw)' }, { transform: 'translateX(-20vw)' }],
+        { duration: 560, easing: EASE, fill: 'forwards' }
+      );
+      cover.onfinish = function () {
+        jumpTo(target, hash);
+        var reveal = track.animate(
+          [{ transform: 'translateX(-20vw)' }, { transform: 'translateX(100vw)' }],
+          { duration: 600, delay: 120, easing: EASE, fill: 'forwards' }
+        );
+        reveal.onfinish = function () {
+          wipe.classList.remove('is-active');
+          reveal.cancel();
+          cover.cancel();
+          wiping = false;
+        };
+      };
     });
   }
 
