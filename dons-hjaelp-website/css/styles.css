@@ -580,35 +580,6 @@ html[lang="en"] .lang-toggle [data-lang-opt="en"] { background: var(--green); co
   .site-footer { padding-bottom: calc(110px + env(safe-area-inset-bottom)); }
 }
 
-/* ---------- Pensel-overgang ---------- */
-.brush-wipe {
-  position: fixed; inset: 0; z-index: 120;
-  pointer-events: none; overflow: hidden;
-  visibility: hidden;
-}
-.brush-wipe.is-active { visibility: visible; pointer-events: auto; }
-.bw-track {
-  position: absolute; top: -5vh; bottom: -5vh; left: 0;
-  width: 160vw;
-  transform: translateX(-185vw);
-  will-change: transform;
-}
-.bw-paint { position: absolute; top: 0; left: 0; width: 140vw; height: 100%; }
-.bw-bristles { position: absolute; top: 0; left: 138vw; width: max(4vw, 34px); height: 100%; }
-.bw-ferrule {
-  position: absolute; top: 0; height: 100%;
-  left: calc(138vw + max(4vw, 34px) - 2px); width: max(2.2vw, 18px);
-  background: linear-gradient(90deg, #b9c3c0, #f4f7f6 35%, #d5ddda 60%, #8e9a96);
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .06);
-}
-.bw-handle {
-  position: absolute; top: 50%;
-  left: calc(138vw + max(4vw, 34px) + max(2.2vw, 18px) - 4px);
-  width: clamp(140px, 18vw, 320px); height: auto;
-  transform: translateY(-50%);
-  filter: drop-shadow(0 10px 16px rgba(10, 50, 36, .25));
-}
-
 /* ---------- Reveal on scroll ---------- */
 @media (prefers-reduced-motion: no-preference) {
   .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }

@@ -121,7 +121,7 @@
     .test-label {
       position: fixed; left: 16px; top: 16px; z-index: 20;
       padding: 6px 12px; border-radius: 999px; font-size: .75rem; font-weight: 700; letter-spacing: .08em;
-      background: #12342c; color: #fff;
+      background: #12342c; color: #fff; text-decoration: none;
     }
     @media (max-width: 480px) { .intro-card { padding: 36px 28px 32px; } .logo { width: 110px; height: 110px; } }
   </style>
@@ -154,7 +154,7 @@
     </div>
   </div>
 
-  <span class="test-label">TEST · LOGO-INTRO</span>
+  <a class="test-label" href="index.html">← Til hjemmesiden · TEST LOGO-INTRO</a>
   <div class="controls">
     <button type="button" class="secondary" id="slow">Langsomt</button>
     <button type="button" id="replay">Afspil igen</button>
@@ -196,8 +196,15 @@
         play();
       });
 
-      play();
+      // Kommer man hertil med pensel-overgangen, venter introen til malingen er væk.
+      if (/[?&]wipe=1/.test(location.search)) {
+        stage.classList.remove('play');
+        setTimeout(play, 750);
+      } else {
+        play();
+      }
     })();
   </script>
+  <script src="js/brush.js"></script>
 </body>
 </html>

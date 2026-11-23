@@ -420,63 +420,6 @@
     });
   }
 
-  /* ---------- Pensel-overgang mellem sektioner ----------
-     Når man klikker på et internt link (#...), fejer en pensel hen over
-     skærmen, siden hopper til den nye sektion bag malingen, og malingen
-     glider væk og afslører den. Slås fra, hvis brugeren har valgt
-     "reducer bevægelse" i sit styresystem. */
-  var wipe = $('.brush-wipe');
-  var track = $('.bw-track');
-  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var wiping = false;
-  var EASE = 'cubic-bezier(.65, 0, .35, 1)';
-
-  function jumpTo(target, hash) {
-    var prev = root.style.scrollBehavior;
-    root.style.scrollBehavior = 'auto';
-    if (hash === '#top') window.scrollTo(0, 0);
-    else target.scrollIntoView({ block: 'start' });
-    root.style.scrollBehavior = prev;
-    try { history.pushState(null, '', hash); } catch (e) { /* ignore */ }
-    if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
-    target.focus({ preventScroll: true });
-    // Vis indholdet med det samme i stedet for at fade ind bag penslen.
-    $$('.reveal', target).forEach(function (el) { el.classList.add('is-visible'); });
-  }
-
-  if (wipe && track && typeof track.animate === 'function') {
-    document.addEventListener('click', function (e) {
-      var link = e.target.closest ? e.target.closest('a[href^="#"]') : null;
-      if (!link || link.classList.contains('skip-link') || reduceMotion) return;
-      if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
-      var hash = link.getAttribute('href');
-      var target = hash.length > 1 ? document.getElementById(hash.slice(1)) : null;
-      if (!target) return;
-      e.preventDefault();
-      if (wiping) return;
-      wiping = true;
-      wipe.classList.add('is-active');
-
-      var cover = track.animate(
-        [{ transform: 'translateX(-185vw)' }, { transform: 'translateX(-20vw)' }],
-        { duration: 560, easing: EASE, fill: 'forwards' }
-      );
-      cover.onfinish = function () {
-        jumpTo(target, hash);
-        var reveal = track.animate(
-          [{ transform: 'translateX(-20vw)' }, { transform: 'translateX(100vw)' }],
-          { duration: 600, delay: 120, easing: EASE, fill: 'forwards' }
-        );
-        reveal.onfinish = function () {
-          wipe.classList.remove('is-active');
-          reveal.cancel();
-          cover.cancel();
-          wiping = false;
-        };
-      };
-    });
-  }
-
   /* ---------- Årstal ---------- */
   var year = $('#year');
   if (year) year.textContent = String(new Date().getFullYear());
