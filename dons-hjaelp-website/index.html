@@ -23,7 +23,16 @@
   <link rel="preload" href="fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/styles.css">
-  <script>document.documentElement.classList.add('js');</script>
+  <script>
+    document.documentElement.classList.add('js');
+    // Lys/mørk tilstand: brug besøgendes valg, ellers enhedens indstilling.
+    (function () {
+      var m = null;
+      try { m = localStorage.getItem('dhh-mode'); } catch (e) {}
+      if (m !== 'dark' && m !== 'light') m = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-mode', m);
+    })();
+  </script>
   <script src="js/main.js" defer></script>
   <script src="js/brush.js" defer></script>
 
@@ -80,6 +89,8 @@
     <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></g></symbol>
     <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></g></symbol>
     <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 22v-8h2.8l.4-3.3h-3.2V8.6c0-.9.3-1.6 1.6-1.6h1.7V4.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3V14h2.8v8z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></g></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
     <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
     <symbol id="i-prev" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="i-next" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
@@ -532,6 +543,19 @@
       <p data-i18n="footer.cookies">Denne side bruger ingen cookies.</p>
     </div>
   </footer>
+
+  <!-- Lys/mørk tilstand -->
+  <button type="button" class="theme-switch" id="theme-switch" role="switch" aria-checked="false"
+          aria-label="Mørk tilstand" title="Mørk tilstand" data-i18n-attr="aria-label=theme.label;title=theme.label">
+    <span class="ts-track">
+      <svg class="ts-off" aria-hidden="true"><use href="#i-sun"/></svg>
+      <svg class="ts-on" aria-hidden="true"><use href="#i-moon"/></svg>
+      <span class="ts-knob">
+        <svg class="ts-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+        <svg class="ts-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+      </span>
+    </span>
+  </button>
 
   <!-- Mobil: fast kontaktbjælke -->
   <div class="mobile-cta glass">

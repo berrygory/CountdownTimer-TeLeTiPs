@@ -166,7 +166,8 @@
     'lb.label': 'Photo viewer',
     'lb.close': 'Close',
     'lb.prev': 'Previous photo',
-    'lb.next': 'Next photo'
+    'lb.next': 'Next photo',
+    'theme.label': 'Dark mode'
   };
 
   // Danske tekster, som kun bruges af scriptet (resten læses fra HTML).
@@ -417,6 +418,22 @@
       var status = $('#form-status');
       if (status) status.textContent = t('form.opening').replace('{email}', to);
       window.location.href = href;
+    });
+  }
+
+  /* ---------- Lys/mørk tilstand ---------- */
+  var modeSwitch = $('#theme-switch');
+  var themeMeta = $('meta[name="theme-color"]');
+  function setMode(mode, save) {
+    root.setAttribute('data-mode', mode);
+    if (modeSwitch) modeSwitch.setAttribute('aria-checked', mode === 'dark' ? 'true' : 'false');
+    if (themeMeta) themeMeta.setAttribute('content', mode === 'dark' ? '#0c1a15' : '#1f8a63');
+    if (save) { try { window.localStorage.setItem('dhh-mode', mode); } catch (e) { /* ignore */ } }
+  }
+  setMode(root.getAttribute('data-mode') === 'dark' ? 'dark' : 'light', false);
+  if (modeSwitch) {
+    modeSwitch.addEventListener('click', function () {
+      setMode(root.getAttribute('data-mode') === 'dark' ? 'light' : 'dark', true);
     });
   }
 
