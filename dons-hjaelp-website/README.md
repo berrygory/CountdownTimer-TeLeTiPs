@@ -23,7 +23,7 @@ Also worth a look:
 
 - **About text** (`#om` in `index.html`): it’s written generically. A few personal lines about Don (background, experience, area) will make it stronger. If you change Danish text, update the matching English text in `js/main.js` (same key name, e.g. `about.p1`).
 - **Logo**: the house-and-hand mark is a simple stand-in drawn in SVG. To use the real logo, save it as `img/logo.svg` or `img/logo.png` and replace the `<svg class="brand-mark">…</svg>` elements in the header and footer with an `<img>`; also replace `favicon.svg`.
-- **Social sharing image**: once the site has a domain, change `og:image` in `index.html` to the full URL, e.g. `https://www.yourdomain.dk/img/og-image.jpg`, so Facebook shows the preview picture.
+- **Domain**: the site is set up for https://donshjaelp.dk (canonical link, social sharing image, `robots.txt`, `sitemap.xml`).
 
 ## Editing texts
 
